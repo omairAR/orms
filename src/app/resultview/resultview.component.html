@@ -1,0 +1,184 @@
+<div id="parent_div">
+
+    <div id="child1">
+        <img src="../assets/images/logo.png" width="100%" height="100%">
+    </div>
+
+    <div id="child2">
+        <img src="../assets/images/jh.png" width="100%" height="100%">
+    </div>
+
+    <div id="child3">
+        
+    </div >
+
+    <div id="child4" >
+
+        
+        <br><br>
+        <div id="head1">Master of Computer Applications</div>
+        <br>
+        <div id="head2">Semester <span> {{semester}}</span> Examination</div>
+        <br>
+        <div id="head3">Statement of marks </div>
+        <br>
+        
+        
+        <mat-grid-list cols="26" rowHeight="20px">
+            <mat-grid-tile colspan="2"><b>Name : </b></mat-grid-tile>
+            <mat-grid-tile colspan="12"> <div class="name-inside-grid"><b> {{fresult[0].name }}</b></div> </mat-grid-tile>
+            <mat-grid-tile colspan="4"></mat-grid-tile>
+            <mat-grid-tile colspan="4"> <div class="enroll-inside-grid"> <b>Enrollment No:</b></div> </mat-grid-tile>
+            <mat-grid-tile colspan="4"><b>{{rollno}}</b> </mat-grid-tile>
+        </mat-grid-list>
+        <br>
+        <mat-grid-list cols="26" rowHeight="29px" >
+            <mat-grid-tile
+                *ngFor="let head of tableHeads"
+                [colspan]="head.cols"
+                [rowspan]="head.rows"
+                [style.background]="head.color"
+                class="grid-prop">
+                
+                {{head.text}}
+
+            </mat-grid-tile>
+        </mat-grid-list>
+        <br>
+        <mat-grid-list cols="26" rowHeight="41px" class="customBorderp">
+            <div id="paper1">
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{paperCodes[0]}}</mat-grid-tile>
+                <mat-grid-tile colspan="6" rowspan="1" class="customBorder "> <div class="papertitle">{{paperTitles[0]}}</div></mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s1 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 30 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].e1 }}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> 70 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s1 + fresult[0].e1 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 100 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].g1}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].gp1}} </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].ce1}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].pe1}} </mat-grid-tile>
+            </div>
+            <div id="paper2">
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{paperCodes[1]}}</mat-grid-tile>
+                <mat-grid-tile colspan="6" rowspan="1" class="customBorder"> <div class="papertitle">{{paperTitles[1]}}</div></mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s2 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 30 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].e2 }}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> 70 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s2 + fresult[0].e2 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 100 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].g2}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].gp2}} </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].ce2}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].pe2}} </mat-grid-tile>
+            </div>
+            <div id="paper3">
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{paperCodes[2]}}</mat-grid-tile>
+                <mat-grid-tile colspan="6" rowspan="1" class="customBorder"> <div class="papertitle">{{paperTitles[2]}}</div></mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s3 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 30 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].e3 }}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> 70 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s3 + fresult[0].e3 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 100 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].g3}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].gp3}} </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].ce3}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].pe3}} </mat-grid-tile>
+            </div>
+            <div id="paper4">
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{paperCodes[3]}}</mat-grid-tile>
+                <mat-grid-tile colspan="6" rowspan="1" class="customBorder"> <div class="papertitle">{{paperTitles[3]}}</div></mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s4 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 30 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].e4 }}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> 70 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s4 + fresult[0].e4 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 100 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].g4}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].gp4}} </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].ce4}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].pe4}} </mat-grid-tile>
+            </div>
+            <div id="paper5">
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{paperCodes[4]}}</mat-grid-tile>
+                <mat-grid-tile colspan="6" rowspan="1" class="customBorder"> <div class="papertitle">{{paperTitles[4]}}</div></mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s5 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 30 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].e5 }}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> 70 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s5 + fresult[0].e5 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 100 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].g5}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].gp5}} </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].ce5}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].pe5}} </mat-grid-tile>
+            </div>
+            <div id="paper6">
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{paperCodes[5]}}</mat-grid-tile>
+                <mat-grid-tile colspan="6" rowspan="1" class="customBorder"> <div class="papertitle">{{paperTitles[5]}}</div></mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s6 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 30 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].e6 }}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> 70 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s6 + fresult[0].e6 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 100 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].g6}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].gp6}} </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].ce6}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].pe6}} </mat-grid-tile>
+            </div>
+            <div id="paper7">
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{paperCodes[6]}}</mat-grid-tile>
+                <mat-grid-tile colspan="6" rowspan="1" class="customBorder"> <div class="papertitle">{{paperTitles[6]}}</div></mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s7 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 30 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].e7 }}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> 70 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s7 + fresult[0].e7 }}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 100 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].g7}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].gp7}} </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].ce7}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].pe7}} </mat-grid-tile>
+            </div>
+
+            <div id="total">
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> </mat-grid-tile>
+                <mat-grid-tile colspan="6" rowspan="1" class="customBorder"> <div class="papertitle"><b> total </b></div></mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].s1 + fresult[0].s2+ fresult[0].s3+ fresult[0].s4+ fresult[0].s5+ fresult[0].s6+ fresult[0].s7}}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 250 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].e1 + fresult[0].e2+ fresult[0].e3+ fresult[0].e4+ fresult[0].e5+ fresult[0].e6+ fresult[0].e7}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> 450 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder">  {{fresult[0].s1 + fresult[0].s2+ fresult[0].s3+ fresult[0].s4+ fresult[0].s5+ fresult[0].s6+ fresult[0].s7+fresult[0].e1 + fresult[0].e2+ fresult[0].e3+ fresult[0].e4+ fresult[0].e5+ fresult[0].e6+ fresult[0].e7}}</mat-grid-tile>
+                <mat-grid-tile colspan="1" rowspan="1" class="customBorder"> 100 </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> -- </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].gp1 + fresult[0].gp2+ fresult[0].gp3+ fresult[0].gp4+ fresult[0].gp5+ fresult[0].gp6+ fresult[0].gp7}} </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].ce1 + fresult[0].ce2+ fresult[0].ce3+ fresult[0].ce4+ fresult[0].ce5+ fresult[0].ce6+ fresult[0].ce7}}</mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorder"> {{fresult[0].pe1 + fresult[0].pe2+ fresult[0].pe3+ fresult[0].pe4+ fresult[0].pe5+ fresult[0].pe6+ fresult[0].pe7}} </mat-grid-tile>
+            </div>
+        </mat-grid-list><br>
+        <mat-grid-list cols="26" rowHeight="29px"> 
+            <div id="declaration">
+                <mat-grid-tile colspan="2" rowspan="1" > </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorderdec"> <b> CGPA </b></mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorderdec customBorderdecin"> {{fresult[0].cgpa}}</mat-grid-tile>
+                <mat-grid-tile colspan="14" rowspan="1" >  </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorderdec"> <b> RESULT </b> </mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1" class="customBorderdec customBorderdecin"> <b>{{fresult[0].result}} </b></mat-grid-tile>
+                <mat-grid-tile colspan="2" rowspan="1"> </mat-grid-tile>
+            </div>
+        </mat-grid-list>
+        
+
+        <button mat-raised-button color="accent"  class="search-btn" (click)="onSubmit()" >Search Another !!</button>
+        &nbsp;&nbsp;&nbsp;
+        <button mat-raised-button color="accent"  class="search-btn" (click)="exportAsPDF()" >Print result</button>
+              
+    </div>
+    
+</div>
+    
+

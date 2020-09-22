@@ -1,0 +1,58 @@
+
+<div id="parent_div" class="back-img">
+    <div id="child1">
+        <img src="../assets/images/logo.png" width="100%" height="100%">
+    </div>
+
+    <div id="child2">
+
+    </div>
+    <div id="child3">
+        <mat-card class="headerr">
+           
+            <mat-card-title>Score Card</mat-card-title>
+        
+        </mat-card>
+        <mat-card>
+            <form [formGroup]="searchForm" (ngSubmit)="onSubmit(searchForm.value)">
+                <mat-form-field appearance="fill">
+                    <mat-label>Rollno</mat-label>
+                    <input matInput ngModel formControlName="rollno" required>
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>Course</mat-label>
+                    <mat-select ngModel formControlName="course" required>
+                      <mat-option value="mca">mca</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>semester</mat-label>
+                    <mat-select ngModel formControlName="semester" required>
+                        <mat-option value="I">I</mat-option>
+                        <mat-option value="II">II</mat-option>
+                        <mat-option value="III">III</mat-option>
+                        <mat-option value="IV">IV</mat-option>
+                        <mat-option value="V">V</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <br>
+                
+                <button mat-raised-button color="accent"  class="search-btn" type="submit" >Submit</button>
+            </form>
+            
+        </mat-card>
+
+        <!--{{searchForm.value.rollno | json}}-->
+
+      
+       
+    </div>
+    
+</div>
+
+
+<!--
+    
+-->

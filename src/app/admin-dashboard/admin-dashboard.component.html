@@ -1,0 +1,66 @@
+<br>
+<mat-card><h1> You are at Dashboard </h1></mat-card>
+<br> 
+
+<mat-grid-list cols="203" rowHeight="100px">
+    <mat-grid-tile colspan="50" class="back1"> 
+        
+        <div class="parent">
+            <div class="child1">
+                <img src="../../assets//images/users.png">
+            </div>
+            <div class="child2">
+                 {{displayPass+ displayFail}}
+            </div>
+            <div class="child3">
+                <div class="noofstuds"><span>No. of Students Appeared</span></div>
+            </div>
+        </div>
+
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1">  </mat-grid-tile>
+    <mat-grid-tile colspan="50" class="back2"> 
+        <div class="parent">
+            <div class="child1">
+                <img src="../../assets/images/university.png">
+            </div>
+            <div class="child2">
+                {{displayRslt}}
+            </div>
+            <div class="child3">
+                <div class="declared"><span> declared results</span></div>
+                
+            </div>
+        </div>
+     </mat-grid-tile>
+    <mat-grid-tile colspan="1">  </mat-grid-tile>
+    <mat-grid-tile colspan="50" class="back3"> 
+        <div class="parent">
+            <div class="child1">
+                <img src="../../assets/images/pass.png">
+            </div>
+            <div class="child2">
+                {{displayPass}}
+            </div>
+            <div class="child3">
+                <div class="passed"><span>No. of Students Passed</span></div>
+            </div>
+        </div>
+
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1">  </mat-grid-tile>
+    <mat-grid-tile colspan="50" class="back4"> 
+        <div class="parent">
+            <div class="child1">
+                <img src="../../assets/images/fail.png">
+            </div>
+            <div class="child2">
+                {{displayFail}}
+            </div>
+            <div class="child3">
+                <div class="failed"><span>No. of Students Failed</span></div>
+            </div>
+        </div>
+
+    </mat-grid-tile>
+</mat-grid-list>

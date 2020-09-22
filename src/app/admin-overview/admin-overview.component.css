@@ -1,0 +1,33 @@
+.grid-prop {
+    border: solid 2px #000;
+    
+}
+
+#gridColor{
+    background-image: linear-gradient(rgb(105, 105, 105),rgba(255, 255, 255, 0.87),rgb(255, 255, 255),rgba(255, 255, 255, 0.87),rgb(255, 255, 255));
+    font-size: x-large;
+}
+
+
+#gridHColor{
+    background-color: #ffd740;
+    font-size: x-large;
+}
+
+#resbtn{
+    margin-left: 10px;
+    
+}
+mat-card span{
+    font-size: x-large;
+}
+
+#adminL{
+
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+#adminL span{
+    text-decoration: underline;
+}

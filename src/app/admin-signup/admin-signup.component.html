@@ -1,0 +1,24 @@
+
+
+        <mat-card>
+            <form [formGroup]="SignupForm" (ngSubmit)="signup()">
+                <mat-form-field appearance="fill" id="spacing1">
+                    <mat-label>User Name </mat-label>
+                    <input matInput ngModel formControlName="username">
+                </mat-form-field>
+                
+                <mat-form-field appearance="fill" id="spacing2">
+                    <mat-label>Password</mat-label>
+                    <input matInput ngModel formControlName="password" type="password">
+                </mat-form-field>
+                
+                
+                <button mat-raised-button color="accent"  class="search-btn" type="submit" >SignUp</button>
+            </form>
+            
+        </mat-card>
+
+        <!--{{SignupForm.value | json}}-->
+
+      
+       

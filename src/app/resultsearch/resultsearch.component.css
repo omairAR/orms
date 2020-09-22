@@ -1,0 +1,40 @@
+#parent_div{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.headerr{
+    background-color: #ffd740;
+    
+}
+
+#child1{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 45%;
+}
+
+
+
+#child2{
+    position: absolute;
+    z-index: 2;
+    background-image: radial-gradient(circle, rgba(255, 217, 1, 0.507), rgba(255, 196, 0, 0.082), rgb(4, 65, 4));
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+#child3{
+    position: absolute;
+    z-index: 2;
+}
+
+

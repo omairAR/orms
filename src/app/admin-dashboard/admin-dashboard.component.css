@@ -1,0 +1,93 @@
+.back1{
+   
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(54, 142, 220) , rgb(54, 132, 220) , rgb(54, 122, 220));
+}
+
+.back2{
+   
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(225, 168, 0) , rgb(255, 158, 0) , rgb(225, 148, 0));
+}
+
+.back3{
+   
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.808) , rgb(0, 177, 95) , rgb(0, 167, 95) , rgb(0, 157, 95));
+}
+
+.back4{
+   
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(225, 75, 50) , rgb(225, 65, 50) , rgb(225, 55, 50));
+}
+
+
+
+.parent{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.child1{
+    position: relative;
+    height: 80%;
+    width: 25% ;
+    margin: 10px;
+}
+
+.child2{
+    position: relative;
+    height: 38%;
+    width: 12%;
+    top : -80%;
+    right: -58%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.child3{
+    position: relative;
+    height: 38%;
+    width: 67%;
+    top : -85%;
+    right: -30%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+}
+
+img{ 
+    width: 100%; 
+    height: 100%; 
+    }
+
+.child3 span{
+    
+    color: white;
+    font-size: 120%;
+    align-content: center;
+    font-weight: bold;
+    
+}
+
+.child2{
+    font-size: 180%;
+}
+
+.passed{
+    position: absolute;
+    left: 10%;
+}
+
+.failed{
+    position: absolute;
+    left: 10%;
+}
+
+.declared{
+    position: absolute;
+    left: 16%;
+}
+
+.noofstuds{
+    position: absolute;
+    left: 4%;
+
+}

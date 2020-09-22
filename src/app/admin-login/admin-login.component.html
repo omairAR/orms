@@ -1,0 +1,47 @@
+
+<div id="parent_div">
+    <div id="child1">
+        <img src="../assets/images/logo.png" width="100%" height="100%">
+    </div>
+
+    <div id="child2">
+
+    </div>
+    <div id="child3">
+        
+        <mat-card class="headerr">
+           
+                <mat-card-title>Admin Login</mat-card-title>
+            
+        </mat-card>
+        <mat-card>
+            
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <mat-form-field appearance="fill">
+                    <mat-label>User Name</mat-label>
+                    <input matInput ngModel formControlName="username">
+                </mat-form-field>
+                <br>
+                <mat-form-field appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput ngModel formControlName="password" type="password">
+                </mat-form-field>
+                <br>
+                
+                <button mat-raised-button color="accent"  class="search-btn" type="submit" >Login</button>
+            </form>
+            
+        </mat-card>
+
+       <!--{{loginForm.value | json}} --> 
+
+      
+       
+    </div>
+    
+</div>
+
+
+<!--
+    
+-->
